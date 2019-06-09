@@ -1,0 +1,8 @@
+{
+  "packages": [
+    "packages/*",
+    "config/*",
+    "lab"
+  ],
+  "version": "0.0.0"
+}

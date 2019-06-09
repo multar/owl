@@ -1,0 +1,32 @@
+{
+  "name": "@haniravi/owl",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Emoji control",
+  "scripts": {
+    "lint": "standard packages/*/lib/**/*.js",
+    "test": "lerna run test --concurrency 1 --stream --ignore @haniravi/owl-lab",
+    "test:coverage": "lerna run test:coverage --concurrency 1 --stream",
+    "postinstall": "lerna bootstrap --hoist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haniravi/owl.git"
+  },
+  "keywords": [
+    "owl"
+  ],
+  "author": "Miro Ter-Seri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haniravi/owl/issues"
+  },
+  "homepage": "https://github.com/haniravi/owl#readme",
+  "devDependencies": {
+    "ava": "^2.0.0",
+    "husky": "^2.3.0",
+    "lerna": "^3.14.1",
+    "lint-staged": "^8.1.7",
+    "standard": "^12.0.1"
+  }
+}
