@@ -1,0 +1,33 @@
+{
+  "name": "@haniravi/owl-cli",
+  "version": "0.0.0",
+  "private": true,
+  "description": "CLI to get emoji",
+  "author": "Miro <miro.ter.seri@gmail.com>",
+  "homepage": "https://github.com/haniravi/owl/tree/master/packages/cli",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haniravi/owl.git"
+  },
+  "scripts": {
+    "test": "ava --verbose --color",
+    "test:coverage": "nyc --reporter=text ava --verbose --color",
+    "test:watch": "ava -vw"
+  },
+  "bugs": {
+    "url": "https://github.com/haniravi/owl/issues"
+  },
+  "devDependencies": {
+    "ava": "^2.0.0",
+    "nyc": "^14.1.1"
+  },
+  "bin": {
+    "owl": "./cli.js"
+  },
+  "dependencies": {
+    "node-emoji": "^1.10.0",
+    "yargs": "^13.2.4"
+  }
+}
