@@ -1,4 +1,4 @@
-const emoji = require('node-emoji')
+const { emoji } = require('node-emoji')
 
 /**
  * Get emoji from given `argv` and print code
@@ -8,7 +8,12 @@ const emoji = require('node-emoji')
  */
 
 function get (argv) {
-  const code = emoji.get(argv.alias)
+  const code = emoji[argv.alias]
+
+  if (!code) {
+    throw new Error(`No emoji for ${argv.alias}`)
+  }
+
   console.log(code)
 }
 
