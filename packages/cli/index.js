@@ -1,1 +1,1 @@
-module.exports = require('node-emoji')
+module.exports = require('./src/commands')

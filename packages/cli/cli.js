@@ -2,7 +2,7 @@
 
 const yargs = require('yargs')
 
-const { get } = require('./src/commands')
+const { get } = require('.')
 
 const { argv } = yargs
   .command('get <alias>', 'get the emoji by alias')
