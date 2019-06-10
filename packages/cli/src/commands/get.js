@@ -14,7 +14,7 @@ function get (argv) {
     throw new Error(`No emoji for ${argv.alias}`)
   }
 
-  console.log(code)
+  return code
 }
 
 module.exports = get

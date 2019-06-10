@@ -12,7 +12,13 @@ const [ cmd ] = argv._
 const command = Commands[cmd]
 
 if (command) {
-  command(argv)
+  try {
+    const res = command(argv)
+    console.log(res)
+  } catch (err) {
+    console.error(err.message)
+    process.exit(1)
+  }
 } else {
   // show help if no args
   yargs.showHelp()

@@ -27,6 +27,8 @@ const getCodeOk = async (t, alias, code) => {
 const getCodeErr = async (t, alias) => {
   const isErr = (res) => {
     t.not(res.code, 0)
+
+    t.regex(res.stderr, /No emoji for (.*)+/)
   }
 
   await t.throwsAsync(() => execFor(alias))
